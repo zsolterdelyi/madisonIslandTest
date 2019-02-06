@@ -39,7 +39,8 @@ public class SearchTest {
             String productName = container.getText();
 
 
-            assertThat("Some of the product names do not contain the searched keyword", productName, containsString(keyword.toUpperCase()));
+            assertThat("Some of the product names do not contain the searched keyword",
+                    productName, containsString(keyword.toUpperCase()));
         }
 
 
