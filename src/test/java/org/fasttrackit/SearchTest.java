@@ -18,7 +18,7 @@ public class SearchTest {
     @Test
     public void searchByOneKeywordTest() {
 
-        System.setProperty("webdriver.chrome.driver","src//test//resources//drivers//chromedriver");
+        System.setProperty("webdriver.chrome.driver","src//test//resources//drivers//chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://fasttrackit.org/selenium-test/sale.html");
