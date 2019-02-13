@@ -16,7 +16,7 @@ public class ShoppingCartTest {
     @Test
     public void addToCartFromSearchResultsTest () throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver","src//test//resources//drivers//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","src//test//resources//drivers//chromedriver");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://fasttrackit.org/selenium-test/sale.html");
