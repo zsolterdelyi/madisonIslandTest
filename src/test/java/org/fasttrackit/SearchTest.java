@@ -15,20 +15,18 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.assertThat;
 
-public class SearchTest {
+public class SearchTest extends TestBase {
 
 
     @Test
     public void searchByOneKeywordTest() {
 
-        System.setProperty("webdriver.chrome.driver",AppConfig.getChromeDriverPath());
-
-        WebDriver driver = new ChromeDriver();
-        driver.get(AppConfig.getSiteUrl());
 
         Header header = PageFactory.initElements(driver, Header.class);
 
         String keyword = "vase";
+
+        waitForPageToLoad(500);
 
         header.search(keyword);
 

@@ -14,15 +14,12 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
-public class ShoppingCartTest {
+public class ShoppingCartTest extends  TestBase {
 
     @Test
     public void addToCartFromSearchResultsTest () throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver","src//main//resources//drivers//chromedriver");
 
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://fasttrackit.org/selenium-test/sale.html");
 
         String keyword = "vase";
 
